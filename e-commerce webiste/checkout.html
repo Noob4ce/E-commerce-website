@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share.css" type="text/css">
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <title>Checkout Page</title>
+    <!-- /*all code was written by Natsasion*/ -->
+    <!-- /*only some parts are written by others and already defined by their name*/ -->
+</head>
+
+<body onload="displayFinalCart()">
+    <div id="backdrop"></div>
+    <header>
+        <ul id="headNav">
+            <li id="subHeadLogo">
+                <a href="index.html"><img src="./images/logo.png" alt="logoshop"></a>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="checkout.html"><img src="./images/icons/bag.svg" alt="bag svg" /></a></li>
+                    <li id="loginArea">
+                        <a href="login.html" id="loginLink"><img src="./images/icons/person.svg" alt="login svg"
+                                id='logIcon' /></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- use link to make the nav bar for tablet or mobile version -->
+        <a href="#side-drawer" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <aside id="side-drawer">
+            <header>
+                <a href="#" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </header>
+            <ul id="mysideBar">
+                <li><a href="index.html" id="home">home</a></li>
+                <li><a href="men.html" id="men">Men</a></li>
+                <li><a href="women.html" id="women">Women</a></li>
+                <li><a href="checkout.html" id='myBag'>bag</a>
+                </li>
+                <li><a href="login.html" id='logo'>log in</a>
+                </li>
+            </ul>
+        </aside>
+        <div id="userMenu">
+            <div class="userMenuItem">
+                <button class="menuButton">Order</button>
+            </div>
+            <div class="userMenuItem">
+                <button class="menuButton" onclick="logout()">Log out</button>
+            </div>
+    </header>
+    <main>
+        <section id="checkoutBlock">
+            <!-- <div class="itemBox">
+                <div class="cartImg">
+                    <img src="images\shoe10001.png" alt="">
+                </div>
+                <div class="cartText">
+                    <h2>SuperRep Go</h2>
+                    <h2>Men's Sport Shoes</h2>
+                    <h2>US 8.5</h2>
+                    <h2>$100</h2>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="cartImg">
+                    <img src="images\shoe10002.png" alt="">
+                </div>
+                <div class="cartText">
+                    <h2>SuperRep Go</h2>
+                    <h2>Men's Sport Shoes</h2>
+                    <h2>US 8.5</h2>
+                    <h2>$100</h2>
+                </div>
+            </div> -->
+        </section>
+
+        <section id="purchaseBox">
+            <h2 id="totalPurchase"></h2>
+            <button id="purchaseButton" onclick="purchase()">Purchase</button>
+        </section>
+
+        <section id="emptyCart">
+            <h1>You Have No Items in Cart</h1>
+        </section>
+
+        <section id="thanks">
+            <h1>Thank You!</h1>
+        </section>
+
+        <footer>
+            <ul id="footerBox">
+                <li>&#169;2022 JUNA, Inc. All Rights Reserved</li>
+                <div id="socialMedia">
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/"><img src="./images/icons/facebook.svg"
+                                alt="facebook svg" /></a>
+                    </li>
+                    <li id="instagram">
+                        <a href="https://www.instagram.com/"><img src="./images/icons/instagram.svg"
+                                alt="instagram svg" /></a>
+                    </li>
+                </div>
+            </ul>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

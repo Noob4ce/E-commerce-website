@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share.css" type="text/css">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <title>Login Page</title>
+    <!-- /*all code was written by Natsasion*/ -->
+    <!-- /*only some parts are written by others and already defined by their name*/ -->
+</head>
+
+<body>
+    <div id="backdrop"></div>
+    <header>
+        <ul id="headNav">
+            <li id="subHeadLogo">
+                <a href="index.html"><img src="./images/logo.png" alt="logoshop"></a>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="cart.html"><img src="./images/icons/bag.svg" alt="bag svg" id="cartIcon" /></a></li>
+                    <li id="loginArea">
+                        <a href="login.html" id="loginLink"><img src="./images/icons/person.svg" alt="login svg"
+                                id='logIcon' /></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- use link to make the nav bar for tablet or mobile version -->
+        <a href="#side-drawer" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <aside id="side-drawer">
+            <header>
+                <a href="#" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </header>
+            <ul id="mysideBar">
+                <li><a href="index.html" id="home">home</a></li>
+                <li><a href="men.html" id="men">Men</a></li>
+                <li><a href="women.html" id="women">Women</a></li>
+                <li><a href="checkout.html" id='myBag'>bag</a>
+                </li>
+                <li><a href="login.html" id='logo'>log in</a>
+                </li>
+            </ul>
+        </aside>
+        <div id="userMenu">
+            <div class="userMenuItem">
+                <button class="menuButton">Order</button>
+            </div>
+            <div class="userMenuItem">
+                <button class="menuButton" onclick="logout()">Log out</button>
+            </div>
+    </header>
+
+    <main id="mainContainer">
+        <section id="login">
+            <div id="loginForm">
+                <h2>Log In</h2>
+                <div id="formContent">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="loginName" name="email">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="loginPassword" name="password">
+                        <span id="lPasswordAlert"></span>
+                    </div>
+                    <div class="linkInform1">
+                        <a href="">Forgotten Your Password?</a>
+                    </div>
+                    <div id="linkInform">
+                        <button id="loginButton" type="submit" value="Login" onclick="login()">Log In</button>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div id="askRegister">
+                <h2>Not a member yet?</h2>
+                <p>
+                    Become members receive benefits, like Rewards, special offers, free shipping, and more!
+                </p>
+                <button id="member"><a href="registration.html">Become a member</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul id="footerBox">
+            <li>&#169;2022 JUNA, Inc. All Rights Reserved</li>
+            <div id="socialMedia">
+                <li id="facebook">
+                    <a href="https://www.facebook.com/"><img src="./images/icons/facebook.svg" alt="facebook svg" /></a>
+                </li>
+                <li id="instagram">
+                    <a href="https://www.instagram.com/"><img src="./images/icons/instagram.svg"
+                            alt="instagram svg" /></a>
+                </li>
+            </div>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+/*natsasion style*/
+/****************************************************************/
+#bodyContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 20px;
+}
+
+#bodyContainer img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainImage {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+}
+
+
+#detailContent h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+
+#price{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+#selectSize {
+    font-size: 1.2rem;
+}
+
+
+#sizeBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#sizeBox li {
+    list-style: none;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 15px 5px;
+    margin: 0.3rem;
+    width: 6rem;
+    text-align: center;
+}
+
+#sizeBox li:hover {
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+}
+
+#addTocart {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 20px 5px;
+    width: 40%;
+    margin-left: 30%;
+    position: relative;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+#addTocart:hover{
+    background-color: #5a5959;
+    color: white;
+    cursor: pointer;
+}
+
+/****************************************************************/
+/*Zaibing*/
+#cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 400px;
+    display: none;
+    /*natsasion*/
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    right: 0;
+}
+
+/*natsasion style*/
+/****************************************************************/
+
+.cartBlock p{
+    margin: 0;
+}
+.cartBlock{
+    margin-top: 5px;
+}
+#cartCloseButton {
+    text-align: right;
+}
+
+#checkOutBtn {
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    text-transform: uppercase;
+    border: none;
+}
+
+#checkOutBtn:hover {
+    cursor: pointer;
+    background-color: rgb(177, 175, 175);
+    color: black;
+    border-color: rgb(177, 175, 175);
+    border: none;
+}
+
+#closeBtn {
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+}
+
+#closeBtn:hover {
+    cursor: pointer;
+}
+
+/****************************************************************/
+
+/*Zaibing*/
+#checkoutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Zaibing*/
+.checkoutImg img {
+    padding-left: 200px;
+
+    height: 200px;
+    width: 200px;
+}
+
+/**************************************************************/
+/*natsasion*/
+@media (max-width: 860px) {
+    #bodyContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #detailContent {
+        margin-left: 20px;
+    }
+
+    #detailContent h1 {
+        font-size: 2rem;
+    }
+
+    #gender {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    #addTocart {
+        font-size: 0.8rem;
+    }
+}

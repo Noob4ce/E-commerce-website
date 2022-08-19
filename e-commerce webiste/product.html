@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share.css" type="text/css">
+    <link rel="stylesheet" href="product.css" type="text/css">
+    <title>Product Page</title>
+    <!-- /*all code was written by Natsasion*/ -->
+    <!-- /*only some parts are written by others and already defined by their name*/ -->
+</head>
+
+<body onload="getId()">
+    <header>
+        <ul id="headNav">
+            <li id="subHeadLogo">
+                <a href="index.html"><img src="./images/logo.png" alt="logoshop"></a>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="subHeadNav">
+                    <li><a href="checkout.html"><img src="./images/icons/bag.svg" alt="bag svg" id="cartIcon" /></a>
+                    </li>
+                    <li id="loginArea">
+                        <a href="login.html" id="loginLink"><img src="./images/icons/person.svg" alt="login svg"
+                                id='logIcon' /></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- use link to make the nav bar for tablet or mobile version -->
+        <a href="#side-drawer" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <aside id="side-drawer">
+            <header>
+                <a href="#" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </header>
+            <ul id="mysideBar">
+                <li><a href="index.html" id="home">home</a></li>
+                <li><a href="men.html" id="men">Men</a></li>
+                <li><a href="women.html" id="women">Women</a></li>
+                <li><a href="checkout.html" id='myBag'>bag</a>
+                </li>
+                <li><a href="login.html" id='logo'>log in</a>
+                </li>
+            </ul>
+        </aside>
+        <div id="userMenu">
+            <div class="userMenuItem">
+                <button class="menuButton">Order</button>
+            </div>
+            <div class="userMenuItem">
+                <button class="menuButton" onclick="logout()">Log out</button>
+            </div>
+    </header>
+
+    <main>
+        <div id="bodyContainer">
+            <section id="mainImage">
+                <img id="imageurl">
+            </section>
+            <section>
+                <section id="cart">
+                    <div id="cartCloseButton" class="cartBlock">
+                        <button onclick="closeCart()" id="closeBtn">X</button>
+                    </div>
+                    <div class="cartBlock">
+                        <p>ADDED TO BAG!</p>
+                    </div>
+                    <div class="cartBlock">
+                        <img id="smallimage">
+                    </div>
+                    <div class="cartBlock">
+                        <p id="total"></p>
+                    </div>
+                    <div class="cartBlock">
+                        <button id="checkOutBtn" onclick="location.href = 'checkout.html'">Checkout</button>
+                    </div>
+                </section>
+                <section id="detailContent">
+                    <h3 id="id"></h3>
+                    <h1 id="modelname"></h1>
+                    <p id="brand"></p>
+                    <p id="gender"></p>
+                    <h4 id="price"></h4>
+                    <div>
+                        <h3 id="selectSize">Select size</h3>
+                        <ul id="sizeBox">
+                            <li id="us7" onclick="selectSize(this.id)">US 7</li>
+                            <li id="us75" onclick="selectSize(this.id)">US 7.5</li>
+                            <li id="us8" onclick="selectSize(this.id)">US 8</li>
+                            <li id="us85" onclick="selectSize(this.id)">US 8.5</li>
+                            <li id="us9" onclick="selectSize(this.id)">US 9</li>
+                            <li id="us95" onclick="selectSize(this.id)">US 9.5</li>
+                            <li id="us10" onclick="selectSize(this.id)">US 10</li>
+                            <li id="us105" onclick="selectSize(this.id)">US 10.5</li>
+                            <li id="us11" onclick="selectSize(this.id)">US 11</li>
+                        </ul>
+                    </div>
+
+                    <input type="hidden" name="shoe's name" value="Nike SuperRep Go">
+                    <input type="hidden" name="price" value="180">
+                    <div id="buttonCart">
+                        <button onclick="displayCart()" id="addTocart">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <ul id="footerBox">
+            <li>&#169;2022 JUNA, Inc. All Rights Reserved</li>
+            <div id="socialMedia">
+                <li id="facebook">
+                    <a href="https://www.facebook.com/"><img src="./images/icons/facebook.svg" alt="facebook svg" /></a>
+                </li>
+                <li id="instagram">
+                    <a href="https://www.instagram.com/"><img src="./images/icons/instagram.svg"
+                            alt="instagram svg" /></a>
+                </li>
+            </div>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

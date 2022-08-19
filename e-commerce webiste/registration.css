@@ -1,0 +1,98 @@
+/*all code was written by Natsasion*/
+/*only some parts are written by others and already defined by their name*/
+#regisContainer{
+    width: 40%;
+    border: 2px solid #201212;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: #D2B868;
+    background-color: #201212;;
+}
+
+#regisContainer h2{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+#formContent{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 50px;
+}
+
+#formContent input{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#passReq{
+    font-size: 1.3rem;
+    color: rgb(210, 194, 104);
+}
+
+#passReq p{
+    margin-bottom: 0;
+}
+
+#passReq ul{
+    padding: 0;
+    margin-top: 0;
+}
+
+#passReq li{
+    list-style: none;
+    padding-left: 50px;
+    font-size: 1rem;
+}
+
+#regisBtn button{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#regisBtn button:hover{
+    cursor: pointer;
+    background-color: rgb(121, 119, 119);
+}
+
+#rPasswordAlert{
+    color: red;
+}
+
+@media (max-width: 860px){
+    #regisContainer {
+        width: 100%;
+        margin: 14vw auto 0 auto;
+    }
+    #regisContainer h2 {
+        font-size: 2rem;
+    }
+    #formContent {
+        font-size: 1rem;
+    }
+    #formContent input {
+        font-size: 1.2rem;
+    }
+    #passReq {
+        font-size: 1rem;
+    }
+
+    #passReq li {
+        font-size: 0.8rem;
+        padding-left: 8vw;
+    }
+    #regisBtn button {
+        padding: 8px 25px;
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+     
+}

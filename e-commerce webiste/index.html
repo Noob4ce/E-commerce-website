@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Main Page</title>
+    <!-- /*all code was written by Natsasion*/ -->
+    <!-- /*only some parts are written by others and already defined by their name*/ -->
+    <!-- Images are freely-usable from https://www.pexels.com/ and https://unsplash.com/ -->
+</head>
+
+<body onload="getWomenTrends(), getMenTrends()">
+    <header>
+        <ul id="headNav">
+            <li id="subHeadLogo">
+                <a href="index.html"><img src="./images/logo.png" alt="logoshop"></a>
+            </li>
+            <div class="subHeadNav">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+            </div>
+            <div class="subHeadNav">
+                <li>
+                <li><a href="checkout.html"><img src="./images/icons/bag.svg" alt="bag svg" id="cartIcon" /></a></li>
+                </li>
+                <li id="loginArea">
+                    <a href="login.html" id="loginLink"><img src="./images/icons/person.svg" alt="login svg"
+                            id='logIcon' /></a>
+                </li>
+            </div>
+        </ul>
+        <!-- use link to make the nav bar for tablet or mobile version -->
+        <a href="#side-drawer" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <aside id="side-drawer">
+            <header>
+                <a href="#" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </header>
+            <ul id="mysideBar">
+                <li><a href="index.html" id="home">home</a></li>
+                <li><a href="men.html" id="men">Men</a></li>
+                <li><a href="women.html" id="women">Women</a></li>
+                <li><a href="checkout.html" id='myBag'>bag</a>
+                </li>
+                <li><a href="login.html" id='logo'>log in</a>
+                </li>
+            </ul>
+        </aside>
+        <div id="userMenu">
+            <div class="userMenuItem">
+                <button class="menuButton">Order</button>
+            </div>
+            <div class="userMenuItem">
+                <button class="menuButton" onclick="logout()">Log out</button>
+            </div>
+    </header>
+
+    <main>
+        <section>
+            <div id="mainPic">
+                <h1 id="textMain"><a href="list.html"></a></h1>
+            </div>
+        </section>
+        <section id="trendsBox">
+            <h2>Women Trends</h2>
+            <div class="trendContainer" id="womenContainer">
+                <!-- Commented out and using JS to accomplish this part -->
+                <!-- <div>
+                    <img src="./images/shoe10002.png" alt="Kyrie 7">
+                    <p>Kyrie 7</p>
+                </div>
+                <div>
+                    <img src="./images/shoe10003.png" alt="Rovux Geneva">
+                    <p>Rovux Geneva</p>
+                </div>
+                <div>
+                    <img src="./images/shoe10001.png" alt="SuperRep Go">
+                    <p>SuperRep Go</p>
+                </div> -->
+            </div>
+            <h2>Men Trends</h2>
+            <div class="trendContainer" id="menContainer">
+                <!-- Commented out and using JS to accomplish this part -->
+                <!-- <div>
+                    <img src="./images/shoe10007.png" alt="Women's 574">
+                    <p>Women's 574</p>
+                </div>
+                <div>
+                    <img src="./images/shoe10009.png" alt="B22">
+                    <p>B22</p>
+                </div>
+                <div>
+                    <img src="./images/shoe10008.png" alt="PUMA Womens X">
+                    <p>PUMA Womens X</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul id="footerBox">
+            <li>&#169;2022 JUNA, Inc. All Rights Reserved</li>
+            <div id="socialMedia">
+                <li id="facebook">
+                    <a href="https://www.facebook.com/"><img src="./images/icons/facebook.svg" alt="facebook svg" /></a>
+                </li>
+                <li id="instagram">
+                    <a href="https://www.instagram.com/"><img src="./images/icons/instagram.svg"
+                            alt="instagram svg" /></a>
+                </li>
+            </div>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+/*all code was written by Natsasion*/
+/*only some parts are written by others and already defined by their name*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap&family=Open+Sans:wght@400;600');
+
+
+
+
+
+/* Header & Footer############################################################################## */
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#headNav{
+	display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    background-color: #D2B868;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.subHeadNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subHeadNav li{
+    margin: 0 25px;
+}
+
+#loginArea{
+    margin-right: 0;
+}
+#subHeadLogo{
+    margin-right: 50px;
+}
+
+#subHeadLogo a{
+    vertical-align: middle;
+}
+
+#subHeadLogo img{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+}
+
+header ul{
+    padding: 0;
+}
+
+#headNav li, footer li{
+    list-style: none;
+}
+
+#headNav li:hover{
+    text-decoration: underline;
+    color: rgb(64, 24, 24);
+}
+
+#headNav li a{
+    display: inline-block;
+    position: relative;
+    padding: 3px;
+}
+
+/*animation*/
+/**************************************************************/
+
+#headNav li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #050505;
+    transition: width 0.25s ease-out;
+}
+
+#headNav li a:hover::before {
+    width: 100%;
+}
+
+#headNav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+}
+
+/**************************************************************/
+/*menu for mobile version*/
+.hamburger {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+#side-drawer {
+    width: 100%;
+    background-color: #D2B868;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    display: flex;
+    justify-content: flex-end;
+    height: 4.5rem;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer li {
+    margin: 10px 0;
+}
+
+#mysideBar {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mysideBar li {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mysideBar a {
+    text-decoration: none;
+    color: black;
+}
+
+#mysideBar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/************************************************************/
+/*Responsive version for tablet or moblie*/
+
+@media (max-width: 870px) {
+
+    .subHeadNav,
+    #loginArea {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #headNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}
+
+
+/*********************************************************/
+/*login Position by Zaibing*/
+
+#userMenu {
+    display: flexbox;
+    flex-direction: column;
+    position: absolute;
+    height: 100px;
+    width: 140px;
+    justify-content: center;
+    margin-left: 95%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+    visibility: hidden;
+    /*natsasion*/
+    right: 0;
+    align-items: center;
+}
+
+.userMenuItem{
+    padding: 10px;
+    text-align: center;
+}
+
+.menuButton {
+    font-size: 12px;
+    border-radius: 10%;
+    /*natsasion*/
+    font-size: 0.75rem;
+    padding: 8px 15px;
+    background-color: black;
+    color: #D2B868;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/*natsaison*/
+.menuButton:hover {
+    cursor: pointer;
+    background-color: #5a5959;
+    color: white;
+}
+/*natsaison*/
+#loginLink:hover{
+    cursor: pointer;
+}
+
+
+/*********************************************************/
+/*footer*/
+
+header img, footer img{
+    height: 2.5rem;
+}
+
+#footerBox {
+    height: 4rem;
+    background-color: #201212;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-left: 20px;
+    color: #707070;
+    width: 100%;
+}
+
+#socialMedia {
+    padding-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/*code from CSS filter generator to convert from black to target hex color
+https://codepen.io/sosuke/pen/Pjoqqp*/
+#facebook{
+    filter: invert(30%) sepia(46%) saturate(6270%) hue-rotate(222deg) brightness(93%) contrast(90%);
+}
+#instagram{
+    filter: invert(35%) sepia(82%) saturate(2594%) hue-rotate(285deg) brightness(89%) contrast(108%);
+}
+
+*{
+    box-sizing: border-box;
+}

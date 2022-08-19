@@ -1,0 +1,155 @@
+/*Zaibing*/
+/**************************************************************/
+#checkoutBlock {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemBox {
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 20px;
+    row-gap: 10px; 
+    height: 300px;
+    /*natsasion*/
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cartImg img{
+    height: 300px;
+}
+
+
+.cartText {
+    width: 300px;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+
+
+#purchaseBox{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#purchaseBox h2{
+    text-align: center;
+}
+
+#purchaseButton {
+    margin-top: 20px;
+    margin-left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #820515; /* Green */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*natsasion*/
+    background-color: #201212;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    width: 50%;
+    text-transform: uppercase;
+    border-radius: 0;
+    z-index: -1;
+
+}
+
+
+#emptyCart {
+    text-align: center;
+    height: 500px;
+    display: none;
+}
+
+#emptyCart h1{
+    padding-top: 15vw;
+}
+
+
+#thanks h1{
+    padding-top: 15vw;
+    text-transform: uppercase;
+}
+#thanks {
+    text-align: center;
+    height: 500px;
+    display: none;
+}
+
+/********************************************************************/
+/*natsasion*/
+
+#purchaseButton:hover {
+    background-color: rgb(107, 105, 105);
+    cursor: pointer;
+}
+
+.cartText h4{
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.cartText h3{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+@media (max-width: 870px){
+    .cartImg img {
+        margin: 0 auto;
+        height: 100px;
+    }
+    .cartImg img {
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        padding-left: 30px;
+    }
+    .cartText {
+        padding: 0;
+        width: 100%;
+    }
+    #purchaseBox {
+        margin: 0 auto;
+      }
+    .cartText h4{
+        font-size: 4vw;
+    }
+    
+    .cartText h3{
+        font-size: 5vw;
+    }
+
+    .itemBox {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        width: 80%;
+        height: fit-content;
+    }
+
+    #purchaseBox h2 {
+        font-size: 5vw;
+    }
+
+    #purchaseButton {
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+     
+}

@@ -1,0 +1,95 @@
+/*all code was written by Natsasion*/
+/*only some parts are written by others and already defined by their name*/
+
+#mainPic {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("./images/head.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 31.25rem;
+    text-align: center;
+    z-index: -1;
+}
+
+#textMain{
+    margin: 0 auto;
+    font-size: 6.5rem;
+    text-align: center;
+    line-height: 31.25rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+#textMain a{
+    text-decoration: none;
+    color: #14DFEE;
+    
+}
+#textMain a:hover{
+    color: rgb(20, 215, 238);
+}
+
+#trendsBox p {
+    font-size: 1.9rem;
+    margin: 0px;
+}
+
+
+#trendsBox h2{
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #E81E1E;
+    width: 400px;
+    margin: 40px auto 0 auto;
+    color: #CFABAB;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+
+#trendsBox h2 a:hover {
+    color: rgb(207, 150, 171);
+}
+
+
+.trendContainer img {
+    height: 15rem;
+}
+
+.trendContainer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.trendContainer img:hover{
+    cursor: pointer;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+h3{
+    font-size: 1.5rem;
+    
+    
+}
+
+
+/************************************************************/
+/*Responsive version for tablet or moblie*/
+
+@media (max-width: 870px) {
+
+    #trendsBox h2{
+        font-size: 2rem;
+        width: 50%;
+        margin: 40px auto 0 auto;
+        color: #CFABAB;
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+}

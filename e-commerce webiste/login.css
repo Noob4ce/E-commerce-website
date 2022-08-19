@@ -1,0 +1,153 @@
+/*all code was written by Natsasion*/
+/*only some parts are written by others and already defined by their name*/
+
+body{
+    text-align: center;
+}
+
+form{
+    text-align: left;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+#mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#login{
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    border: 2px solid #201212;
+}
+
+#login h2{
+    margin: 0;
+}
+
+.linkInform{
+    text-align: center;
+}
+
+.linkInform1{
+    text-align: right;
+    text-decoration: none;
+    color: #201212;
+}
+
+.linkInform1 a {
+    text-decoration: none;
+    color: #201212;
+}
+
+.linkInform1 a:hover {
+    text-decoration: underline;
+}
+
+#askRegister{
+    background-color: #201212;
+    width: 80%;
+    height: 20%;
+    margin: 50px auto;
+    font-size: 1.3rem;
+    padding: 10px 10px 20px 50px;
+    color: #D2B868;
+    text-align: left;
+}
+
+#askRegister h2{
+    text-align: left;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 2rem;
+}
+
+#formContent div{
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+
+#member{
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 10px 30px;    
+    text-decoration: none;
+    color: #201212;
+}
+#member a{   
+    text-decoration: none;
+    color: #201212;
+    text-transform: uppercase;
+}
+
+#member:hover{   
+    background-color: rgb(121, 119, 119);
+    color: white;
+}
+
+
+#loginButton{
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 10px 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#lPasswordAlert{
+    color: red;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@media (max-width: 860px){
+    #mainContainer {
+        grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    #formContent div {
+        font-size: 1rem;
+    }
+    input {
+        height: 1.5rem;
+    }
+    #loginButton {
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 8px 55px;
+    }
+    #login {
+        width: 60%;
+        margin: 20vw auto 40px auto;
+        padding: 30px;
+        border: 2px solid #201212;
+    }
+    #askRegister {
+        font-size: 1rem;
+    }
+    #member {
+        font-size: 1rem;
+        padding: 8px 55px;
+    }
+}
+
+
